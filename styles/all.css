@@ -1,9 +1,9 @@
 body{
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(253, 253, 253).;
 }
 
 header{
-    background:rgb(144, 147, 253);
+    background:rgb(144, 147, 253).;
     padding:0%;
     width: 100%;
     height:40px;
@@ -12,13 +12,13 @@ header{
 }
 
 nav{
-    background:rgb(144, 147, 253);
+    background:rgb(144, 147, 253).;
     padding:0%;
 
 }
 
 article{
-    background-color: rgb(192, 188, 255);
+    background-color: rgb(192, 188, 255).;
 }
 
 h1{
