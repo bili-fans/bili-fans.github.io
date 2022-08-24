@@ -32,3 +32,8 @@ a{
 img{
     object-fit: fill;
 }
+
+footer p{
+    text-align: center;
+    font-size: 14px;
+}
