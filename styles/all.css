@@ -1,24 +1,85 @@
 body{
-    background-color: rgb(253, 253, 253).;
+    background-color: rgb(230, 250, 248);
+    padding-top: 70px;
+    font-family:'Courier New', Courier, monospace;
 }
 
 header{
-    background:rgb(144, 147, 253).;
+    background:rgb(196, 198, 247);
     padding:0%;
     width: 100%;
-    height:40px;
+    height:50px;
     margin: 0px;
-    position: fixed.;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    text-indent: 20px;
+
 }
 
-nav{
-    background:rgb(144, 147, 253).;
-    padding:0%;
+header h2{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
 
+nav ul{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width:100%;
+    display:flex;
+    list-style-type:none;
+    flex-direction: row;
+}
+
+nav li{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    flex:1 ;
+}
+
+    @media screen and (max-width:768px) {
+        nav{height: 40px;
+        }
+        nav li{
+            font-size: 12px;
+        }
+    }
+    @media screen and (min-width:768px){
+        nav{
+            height:20px;
+        }
+        nav li{
+            font-size: 15px;
+        }
+    }
+
+nav{
+    background:rgb(196, 198, 247);
+    padding:0%;
+    width:100%;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    box-shadow:0 5px 5px rgb(0 0 0 / 15%);
+}
 }
 
 article{
-    background-color: rgb(192, 188, 255).;
+    overflow: hidden;
+    clear: both;
+    display:block;
+}
+
+article>p{
+    text-indent:30px;
+}
+
+footer{
+    overflow: hidden;
 }
 
 h1{
@@ -36,4 +97,5 @@ img{
 footer p{
     text-align: center;
     font-size: 14px;
+
 }
