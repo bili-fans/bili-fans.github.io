@@ -16,7 +16,11 @@ header{
     display: flex;
     align-items: center;
     text-indent: 20px;
+    box-shadow:0 5px 5px rgb(0 0 0 / 15%);
+}
 
+footer{
+    width: 100%;
 }
 
 header h2{
@@ -98,4 +102,13 @@ footer p{
     text-align: center;
     font-size: 14px;
 
+}
+
+footer{
+    text-align: center;
+    font-size: 14px;
+}
+
+.input{
+    float: right;
 }
