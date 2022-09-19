@@ -7,30 +7,64 @@
         <link rel="shortcut icon" href="../misaka3.ico">
         <style>
             article{
-                display: flex;
+                width: 100%;
+                display: flex.;
                 overflow:hidden.;
             }
+            article table{
+                margin: 0px;
+                width: 100%;
+            }
             section{
-                border: ;
+                border: 3px;
                 border-color: black;
-                width: 50%;
                 padding: 5px;
                 background-color: rgb(127, 221, 252);
                 border-radius: 10%;
                 overflow: hidden;
                 margin: 0px;
-                margin-left: 5px;
-                margin-right: 5px;
-                float: left.;
+
+            }
+            @media screen and (max-width:768px) {
+                section{
+                    width:45.5%;
+                    margin-left: 0.5%;
+                    margin-right: 0.5%;
+                }
+            }
+            @media screen and (min-width:768px) and (max-width:992px){
+                section{
+                    width: 22.75%;
+                    margin-left: 0.4%;
+                    margin-right: 0.4%;
+                }
+            }
+            @media screen and (min-width:992px){
+                section{
+                    width: 22.75%;
+                    margin-left: 0.5%;
+                    margin-right: 0.5%;
+                }
             }
             .about{
-                border-radius: 10%;
+                border-radius: 5%;
                 padding: 5px;
                 background-color: white;
 
             }
             div>p{
                 font-size: 12px;
+            }
+            ul{
+                list-style-type:none;
+            }
+            .left{
+                float: left;
+
+            }
+            .right{
+                float: right;
+
             }
         </style>
     </head>
@@ -42,7 +76,7 @@
         <p style="display: block;">站长真是太逊了，居然连这个都不会制作！<del>其实就是懒</del></p>
 
         <article>
-            <section>
+            <section class="left">
                 <h3>御坂美琴</h3>
                 <div class="about">
                     <p>她是一个性格好胜、正义感强，有着男孩子般的爽朗性格，但是却没有耐心，非常不坦率的女孩纸。
@@ -51,21 +85,43 @@
                 </div>
                 <a href="./about/about-misaka.html" class="input"><input type="submit" value="戳此处以查看更多"></a>
             </section>
-
-            <section>
+            <section class="left">
                 <h3>御坂妹</h3>
                 <div class="about">
-                    <p>为什么还没有补充啊！（恼）</p>
+                    <p>学园都市排名第三的超能力者御坂美琴的克隆体，借由美琴的DNA图谱诞生，超过20000名。原用于“量产型能力者计划”，
+                        后在“绝对能力者进化计划”实验中作为一方通行的杀戮对象，被杀死超过1万名。<br>
+                        <del>PS：18万日元即可入手</del></p>
                 </div>
+                <a href="./about/about-sisters.html" class="input"><input type="submit" value="戳此处以查看更多"></a>
             </section>
+            <section class="right">
+                <h3>未完待续......</h3>
+                <div class="about">
+                    <p>真的不是站长懒，真的！</p>
+                </div>
+                <a href="./wrong.html" class="input"><input type="submit" value="戳此处以查看更多"></a>
+            </section>
+            <section class="right">
+                <h3>上条当麻</h3>
+                <div class="about">
+                    <p>就读于学园都市某高中，刺猬头发型的高中生。
+                        都市传说中"拥有能将任何能力无效化的能力的男人"的真身，其寄宿"幻想杀手"的右手有着不论善恶，让一切超能力消失的特异能力。
+                        有着但凡遇到有烦恼的人都会伸出援手的性格。<br> 
+                    <del>PS：美琴的心上人，黑子口中的“类人猿”</del></p>
+                </div>
+                <a href="./about/about-kamijou.html" class="input"><input type="submit" value="戳此处以查看更多"></a>
+            </section>
+
         </article>
         
+        <p>本页面及其子页面的部分资料来源于网络</p>
         <p>以上小百科如有更多想法，欢迎向站长投稿。</p>
         <p>QQ<a href="https://qm.qq.com/cgi-bin/qm/qr?k=JiQ3kiE4GZO2QcAeoB6-YMOb0GB9XFXx&noverify=0">请戳这里</a></p>
         <p>邮箱<a href="mailto:3226187528@qq.com">请戳这里</a></p>
         <p>有bilibili账号？<a href="https://space.bilibili.com/2066626915?spm_id_from=333.337.0.0">请戳这里</a></p>
         <footer>
-            <p>由bilibili<a href="https://space.bilibili.com/2066626915?spm_id_from=333.337.0.0">@我叫柠檬君</a>制作</p>
+            <p>© 由bilibili<a href="https://space.bilibili.com/2066626915?spm_id_from=333.337.0.0">@我叫柠檬君</a>制作</p>
+            <a href="https://icp.gov.moe/?keyword=20220437" target="_blank">萌ICP备20220437号</a>
         </footer>
         
         </body>
