@@ -1,20 +1,110 @@
 <!doctype html>
 <html>
     <head>
-        <title></title>
+        <title>奇奇怪怪的游戏又增加了</title>
         <meta name="viewport" content="width=device-width,initial-scak=1,maximun-scake=1,user-scalable=no">
         <link rel="stylesheet" href="../styles/all.css">
         <link rel="shortcut icon" href="../misaka3.ico">
         <style>
+            section{
+                border: 3px;
+                border-color: black;
+                padding: 5px;
+                background-color: rgb(127, 221, 252);
+                border-radius: 10%;
+                overflow: hidden;
+                margin: 0px;
+            }
 
+            @media screen and (max-width:768px) {
+                section{
+                    width:45.5%;
+                    margin-left: 0.5%;
+                    margin-right: 0.5%;
+                }
+                .left>h3{
+                margin-bottom: 5px;
+                font-size: 16.25px;
+            }
+            }
+
+            @media screen and (min-width:768px) and (max-width:992px){
+                section{
+                    width: 22.75%;
+                    margin-left: 0.4%;
+                    margin-right: 0.4%;
+                }
+            }
+
+            @media screen and (min-width:992px){
+                section{
+                    width: 22.75%;
+                    margin-left: 0.5%;
+                    margin-right: 0.5%;
+                }
+
+            }
+            
+
+            .about{
+                border-radius: 5%;
+                padding: 5px;
+                background-color: white;
+                margin-left: 3%;
+                margin-right: 3%;
+            }
+
+            div>p{
+                font-size: 12px;
+            }
+
+            .left{
+                float: left;
+
+            }
+
+            .p1{
+                font-weight: 550;
+                font-size: 12px;
+                margin-top: 5px;
+                text-indent: 10px;
+            }
+            .left>h3{
+                margin-bottom: 5px;
+            }
+            .right{
+                margin-right: 10px;
+                float: right;
+                width: 55px;
+                border-radius: 5%;
+                box-shadow:5px 5px 5px rgb(0 0 0 / 15%);
+            }
         </style>
     </head>
     <body>
         <div class="header">
-
+            <h2>小游戏</h2>
         </div>
 
         <div class="article">
+            <section class="left">
+                <img class="right" src="../photo/misaka5.png" alt="">
+                <h3>找出小黑子</h3>
+                <p class="p1">新概念音游</p>
+                <div class="about">
+                    <p>这绝对是一个让你眼前一亮的游戏！当可爱的黑子和可爱的美琴开始相亲相爱的生活会发生什么呢？</br><del>（眼前一黑吧）</del></p>
+                </div>
+                <a href="../games/Find_Out_Kuroko/index.html" class="input"><input type="submit" value="戳此处以查看更多"></a>
+            </section>
+            <section class="left">
+                <h3>未完待续......</h3>
+                <p class="p1">或许会自己开发？</p>
+                <div class="about">
+                    <p>真的不是站长懒，真的！<br>
+                    但是说实话，目前的所有游戏均为网络资源，所以目前更新进度缓慢。。。</p>
+                </div>
+                <a href="./wrong.html" class="input"><input type="submit" value="戳此处以查看更多"></a>
+            </section>
 
         </div>
 
