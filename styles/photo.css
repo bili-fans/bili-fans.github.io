@@ -1,0 +1,7 @@
+img{
+        width: 49%;
+        float: left;
+        box-shadow: 5px 5px 5px rgb(0 0 0 / 15%);
+        border-radius: 2%;
+        margin: 0.5%;
+}

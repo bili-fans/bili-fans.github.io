@@ -4,9 +4,60 @@
         <title></title>
         <meta name="viewport" content="width=device-width,initial-scak=1,maximun-scake=1,user-scalable=no">
         <link rel="stylesheet" href="../styles/all.css">
+        <link rel="stylesheet" href="../font/user-card/iconfont.css">
         <link rel="shortcut icon" href="../misaka3.ico">
         <style>
-
+            @media screen and (min-width:992px) {
+                .card{
+                    width: 50%;
+                }
+            }
+            @media screen and (max-width:992px) {
+                .card{
+                    width: 100%;
+                }
+            }
+            .card{
+                border: 1px solid #9a9a9a;
+                border-radius: 16px;
+                padding: 15px;
+                float: left;
+            }
+            .user{
+                display:flex ;
+                width: 500px;
+                flex-direction:column ;
+            }
+            .headline{
+                display: flex;
+            }
+            .card img{
+                width: 70px;
+                height: 70px;
+                border-radius: 16px;
+            }
+            .infor{
+                /* e */
+            }
+            .infor p{
+                font-size: 15px;
+            }
+            span{
+                margin-left: 20px;
+                font-size: 12px;
+            }
+            .user a{
+                font-size: 12px;
+                /* margin-left: 20px; */
+            }
+            .who{
+                font-weight: 700;
+                font-size: 15px;
+            }
+            .svg{
+                font-size: 12px;
+                color: blueviolet;
+            }
         </style>
     </head>
     <body>
@@ -19,19 +70,27 @@
             <p>呣......站长只是一个对世俗无欲无求的人......等等我在说什么啊！</p>
             <p>目前本网站只是一个普通的同人网站，在非必要条件下，不会进行任何有关于钱财的行动，因此任何非官方人员挂着本网站的名声去进行募捐的行为并不存在哦！<del>（不过应该也没有什么人看到这个网站罢）</del></p>
             <hr>
-            <hr>
             <h3>本网站的成长历程</h3>
             <p>唔......如果很感兴趣的话，就<a href="./logs/log.html">点击此处</a>进行查看吧！</p>
             <hr>
-            <hr>
             <h3>官方的开发人员</h3>
-            <p>我叫柠檬君</p>
-            <p>称呼：站长</p>
-            <p>bilibili账号：<a href="https://space.bilibili.com/2066626915?spm_id_from=333.337.0.0">@我叫柠檬君</a></p>
-            <p>GitHub账号：<a href="https://github.com/bili-fans">@我叫柠檬君</a></p>
-            <p>QQ账号：<a href="https://qm.qq.com/cgi-bin/qm/qr?k=JiQ3kiE4GZO2QcAeoB6-YMOb0GB9XFXx&noverify=0">3226187528</a></p>
-            <p>邮箱：<a href="mailto:3226187528@qq.com">3226187528@qq.com</a></p>
-            <hr>
+            <div class="card">
+                <div class="headline">
+                    <img src="../photo/lemon-man.jpg" alt="">
+                    <div class="user">
+                        <span class="who">我叫柠檬君</span>
+                        <a href="https://space.bilibili.com/2066626915?spm_id_from=333.337.0.0"><span class="iconfont icon-bilibili-fill svg"></span>@我叫柠檬君</a>
+                        <a href="https://github.com/bili-fans"><span class="iconfont icon-github svg"></span>@我叫柠檬君</a>
+                        <a href="https://qm.qq.com/cgi-bin/qm/qr?k=JiQ3kiE4GZO2QcAeoB6-YMOb0GB9XFXx&noverify=0"><span class="iconfont icon-QQ svg"></span>3226187528</a>
+                        <a href="mailto:3226187528@qq.com"><span class="iconfont icon-email svg"></span>3226187528@qq.com</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="infor">
+                    <p>一位啥也不会，只会卖萌的脱发中学生</p>
+                </div>
+            </div>
+
             <p><a href="https://github.com/bili-fans/bili-fans.github.io"></a>成员招租QAQ</p>
         </div>
 

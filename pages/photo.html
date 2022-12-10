@@ -6,20 +6,34 @@
         <link rel="stylesheet" href="../styles/all.css">
         <link rel="shortcut icon" href="../misaka3.ico">
         <style>
+            /* @media screen and (max-width:992px) {
+                .photo{
+                    width:90%;
+                }
+            }
+            @media screen and (min-width:992px) {
+                .photo{
+                    width:45%;
+                }
+            } */
             table{
                 object-fit: fill;
             }
             img{
-                width: 45%;
+                width: 49%;
                 float: left;
+                box-shadow: 5px 5px 5px rgb(0 0 0 / 15%);
+                border-radius: 2%;
+                margin: 0.5%;
             }
             .photo{
-                width: 100%;
-                border-width: 5px;
-                border-color: rgb(162, 206, 245);
+                width: 90%;
+                border: 1px solid #9a9a9a;
+                box-shadow: 5px 5px 5px rgb(0 0 0 / 15%);
                 overflow: hidden;
                 border-radius: 2%;
-                padding: 5%;
+                padding: 1%;
+                margin-top: 5%;
             }
             input{
                 position: relative;
@@ -36,23 +50,22 @@
 
             <div class="photo">
                 <h3>御坂美琴照片</h3>
-                <img src="../photo/misaka2.png" alt="御坂美琴~">
                 <img src="../photo/misaka1.png" alt="御坂美琴~">
-                <a href="./photos/misaka's-photo.html" class="input"><input type="submit" value="更多御坂美琴照片"></a>
-            </div>
+                <img src="../photo/misaka2.png" alt="御坂美琴~">
 
+            </div>
+            <a href="./photos/misaka's-photo.html" class="input"><input type="submit" value="更多御坂美琴照片"></a>
             <div class="photo">
                 <h3>御坂妹照片</h3>
                 <img src="../photo/sisters1.png" alt="御坂妹的幻想">
                 <img src="../photo/sisters2.png" alt="御坂妹的不屑">
-                <a href="./photos/sisters'-photo.html" class="input"><input type="submit" value="更多御坂妹照片"></a>
             </div>
-
+            <a href="./photos/sisters'-photo.html" class="input"><input type="submit" value="更多御坂妹照片"></a>
             <div class="photo">
                 <h3>茵蒂克丝照片</h3>
-                
-                <a href="./wrong.html">暂无</a>
+                <img src="../photo/index1.png" alt="茵蒂克丝">
             </div>
+                <a href="../pages/wrong.html" class="input"><input type="submit" value="更多茵蒂克丝照片"></a>
 
         </div>
 
