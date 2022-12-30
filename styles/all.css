@@ -23,10 +23,6 @@ body{
     z-index: 114514;
 }
 
-.footer{
-    width: 100%;
-}
-
 .header h2{
     margin-bottom: 0px;
     margin-top: 0px;
@@ -87,10 +83,6 @@ body{
     text-indent:30px;
 }
 
-.footer{
-    overflow: hidden;
-}
-
 h1{
     color:whitesmoke(.);
 }
@@ -104,21 +96,11 @@ img{
     object-fit: fill;
 }
 
-.footer p{
-    text-align: center;
-    font-size: 14px;
-
-}
-
-.footer{
-    text-align: center;
-    font-size: 14px;
-    margin-top: 60px;
-}
-
 .input{
     /* float: right; */
     position: dosolute;
 }
 
-
+footer embed {
+    width: 100%;
+  }

@@ -7,14 +7,14 @@
         <link rel="stylesheet" href="../font/user-card/iconfont.css">
         <link rel="shortcut icon" href="../misaka3.ico">
         <style>
-            @media screen and (min-width:992px) {
+            @media screen and (min-width:992px) and (max-width:1680px) {
                 .card{
-                    width: 50%;
+                    width: 45%;
                 }
             }
             @media screen and (max-width:992px) {
                 .card{
-                    width: 100%;
+                    width: 90%;
                 }
             }
             .card{
@@ -23,21 +23,13 @@
                 padding: 15px;
                 float: left;
             }
-            .user{
-                display:flex ;
-                width: 500px;
-                flex-direction:column ;
-            }
-            .headline{
-                display: flex;
-            }
             .card img{
                 width: 70px;
                 height: 70px;
                 border-radius: 16px;
             }
-            .infor{
-                /* e */
+            .headline{
+                display: flex;
             }
             .infor p{
                 font-size: 15px;
@@ -46,18 +38,24 @@
                 margin-left: 20px;
                 font-size: 12px;
             }
+            .svg{
+                font-size: 12px;
+                color: blueviolet;
+            }
             .user a{
                 font-size: 12px;
                 /* margin-left: 20px; */
+            }
+            .user{
+                display:flex ;
+                width: 500px;
+                flex-direction:column ;
             }
             .who{
                 font-weight: 700;
                 font-size: 15px;
             }
-            .svg{
-                font-size: 12px;
-                color: blueviolet;
-            }
+            
         </style>
     </head>
     <body>
@@ -87,16 +85,33 @@
                 </div>
                 <hr>
                 <div class="infor">
-                    <p>一位啥也不会，只会卖萌的脱发中学生</p>
+                    <p>一位啥也不会，只会卖萌的脱发中学生
+                    </br>（事实上发量还足以我完成这个网站的制作）
+                    </p>
                 </div>
             </div>
-
-            <p><a href="https://github.com/bili-fans/bili-fans.github.io"></a>成员招租QAQ</p>
+            <div class="card">
+                <div class="headline">
+                    <img src="../photo/index1.png" alt="">
+                    <div class="user">
+                        <span class="who">nobody here</span>
+                        <a href=""><span class="iconfont icon-bilibili-fill svg">nothing</span></a>
+                        <a href=""><span class="iconfont icon-github svg">nothing</span></a>
+                        <a href=""><span class="iconfont icon-QQ svg">nothing</span></a>
+                        <a href=""><span class="iconfont icon-email svg">nothing</span></a>
+                    </div>
+                </div>
+                <hr>
+                <div class="infor">
+                    <p>一位啥都会，也许会出现在未来的大佬！
+                    </br>（就......就是说目前还没有这么一个人啦！）</p>
+                </div>
+            </div>
+            <p style="clear:both;"><a href="https://github.com/bili-fans/bili-fans.github.io"></a>成员招租QAQ</p>
         </div>
 
-        <div class="footer">
-            <p>© 由bilibili<a href="https://space.bilibili.com/2066626915?spm_id_from=333.337.0.0">@我叫柠檬君</a>制作</p>
-            <a href="https://icp.gov.moe/?keyword=20220437" target="_blank">萌ICP备20220437号</a>
-        </div>
     </body>
+    <footer>
+        <embed src="../styles/footer.html" />
+    </footer>
 </html>
