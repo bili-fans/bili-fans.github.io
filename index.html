@@ -6,22 +6,97 @@
         <meta name="keywords" content="bilifans, Bili Fans, bili-fans, 御坂美琴, Misaka, Mikoto, Misaka Mikoto, Toaru, 魔法禁书目录, 科学超电磁炮, 某科学的超电磁炮, 柠檬君, 我叫柠檬君">
         <link rel="stylesheet" href="./styles/all.css">
         <link rel="shortcut icon" href="./misaka3.ico">
+        <link rel="stylesheet" href="./font/nav/iconfont.css">
         <style>
             .header{
                 height: 50px;
+                transition-property: background-color , height;
+                transition-duration:0.5s ;
+                transition-timing-function: ease;
+            }
+            .help{
+                width: 60%;
+            }
+            .header:hover{
+                background-color: rgba(178, 180, 253, 0.812);
+                height: 30%;
+            }
+            .header ul{
+                justify-content: flex-end;
+                width: 50%;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                display:flex;
+                list-style-type:none;
+                flex-direction: row;
+                transition-property: width;
+                transition-duration:0.5s ;
+                transition-timing-function: ease;
+            }
+            .header:hover ul{
+                width:50%;
+            }
+            .header ul li{
+                margin-top: 0px;
+                margin-bottom: 0px;
+                flex:1 ;
+                align-items: center;
+            }
+            .header ul li .svg{
+                font-size: 20px;
+                transition-property: font-size;
+                transition-duration: 0.5s;
+                transition-timing-function: ease;
+            }
+            .header ul li .svg:hover{
+                font-size: 80px;
+            }
+            .header ul li .svg:active{
+                font-size: 80px;
+            }
+            .header h2{
+                /* width: 120px; */
+                font-size: 24px;
+                flex-direction: row;
+                transition-property: flex-direction ,font-size,width;
+                transition-duration: 0.5s;
+                transition-timing-function: ease;
+            }
+            .header:hover h2{
+                flex-direction: column;
+                font-size: 48px;
+                /* width: 60px; */
+            }
+            .header li a:hover{
+                background-color: rgb(196, 198, 247);
+            }
+            .icon-tupian+span,.icon-baike+span,.icon-youxi+span,.icon-guanyu+span{
+                display: none;
+                font-size: 0px;
+                transition-property: font-size , display;
+                transition-duration: 0.5s;
+                transition-timing-function: ease;
+            }
+            .icon-tupian:hover+span,.icon-baike:hover+span,.icon-youxi:hover+span{
+                display: flex;
+                justify-content: center;
+                font-size: 20px;
+            }
+            .icon-guanyu:hover+span{
+                display: flex;
+                justify-content: center;
+                font-size: 12px;
             }
         </style>
     </head>
     <body>
         <div class="header">
              <h2>御坂网络</h2>
-        </div>
-        <div class="nav">
             <ul>
-                <li><h3><a href="./pages/photo.html">相册~</h3></li>
-                <li><h3><a href="./pages/about.html">小百科~</a></h3></li>
-                <li><h3><a href="./pages/game.html">小游戏~</a></h3></li>
-                <li><h3><a href="./pages/about-us.html">关于我们</a></h3></li>
+                <li><a href="./pages/photo.html"><span class="svg iconfont icon-tupian"></span><span>相册~</span></a></li>
+                <li><a href="./pages/about.html"><span class="svg iconfont icon-baike"></span><span>百科~</span></a></li>
+                <li><a href="./pages/game.html"><span class="svg iconfont icon-youxi"></span><span>游戏~</span></a></li>
+                <li><a href="./pages/about-us.html"><span class="svg iconfont icon-guanyu"></span><span>关于我们</span></a></li>
 
             </ul>
         </div>
@@ -31,10 +106,10 @@
                 <p>如你所示，目前这个网站依旧十分简陋<del>（只是我真的不会制作而已啦！）</del></p>
                 <p>如果想要获得关于御坂美琴更详细的信息，可以到网上搜索，或者是<a href="https://misaka-fans.github.io/">点击此处</a>去另一个网站哦！</p>
             <hr>
-            <h3>本网站是什么？</h3>
+                <h3>本网站是什么？</h3>
                 <p><del>无能力的</del>站长非常希望把这里变成一个可以让御坂厨聚集的地方哦~</p>
             <hr>
-            <h3>本网站准备开发什么？</h3>
+                <h3>本网站准备开发什么？</h3>
                 <p>（思考）</p>
                 <p>也许，以后可以
                     <ul>
@@ -44,13 +119,14 @@
                         <li>甚至可以在这里看番！</li>
                     </ul>
                 </p>
-                <p><del>不过站长都不会做就是了</del></p>
-            <!-- <img src="./photo/misaka1.png" alt="" style="position:dosolute;width:25%;left:75%; top:50% ; right:25% ;"> -->
+                <p><del>不过站长都不会做且做不到就是了</del></p>
             <hr>
                 <h3>什么？你想给予帮助？</h3>
-                <p>也许你可以通过<a href="https://space.bilibili.com/2066626915?spm_id_from=333.337.0.0">bilibili</a>抑或是<a href="https://github.com/bili-fans/bili-fans.github.io">点击此处</a>直接进入开源界面以进行帮助！</p>
+                <p>如果你有着一定的web前端知识，也许你可以<a href="https://github.com/bili-fans/bili-fans.github.io">点击此处</a>直接进入开源界面以进行帮助！</p>
+                <p>如果你有着更好的建议想要讨论，也可以通过<a href="https://space.bilibili.com/2066626915?spm_id_from=333.337.0.0">bilibili</a>、<a href="mailto:3226187528@qq.com">邮箱</a>或者<a href="https://qm.qq.com/cgi-bin/qm/qr?k=JiQ3kiE4GZO2QcAeoB6-YMOb0GB9XFXx&noverify=0">QQ</a>直接联系站长。</br>当然，你也可以加入我们的QQ讨论群聊：721359779（目前人不多，可以混个大佬的位置啊QWQ）</p>
                 <p>毕竟作者这个<del>发量极少的</del>初中生已经感受到秃头的威胁了QAQ</p>
-            </div>
+                <!-- <img src="./photo/misaka1.png" alt="" style="float: right; width:25%;"> -->
+        </div>
     </body>
     <footer>
         <embed src="./styles/footer.html" />

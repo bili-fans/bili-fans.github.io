@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1106586",
+      "name": "百科",
+      "font_class": "baike",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "4198409",
+      "name": "图片",
+      "font_class": "tupian",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "4320340",
+      "name": "关于",
+      "font_class": "guanyu",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "22978048",
+      "name": "游戏",
+      "font_class": "youxi",
+      "unicode": "e8a1",
+      "unicode_decimal": 59553
+    }
+  ]
+}
